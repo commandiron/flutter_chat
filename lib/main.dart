@@ -22,7 +22,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.light(
           primary: Colors.pink,
-          onPrimary: Colors.white
+          onPrimary: Colors.white,
+          primaryContainer: Colors.purple,
+          onPrimaryContainer: Colors.white,
+          secondaryContainer: Colors.grey[200],
+          onSecondaryContainer: Colors.black,
+          brightness: Brightness.light
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
@@ -32,6 +37,9 @@ class MyApp extends StatelessWidget {
               )
             )
           )
+        ),
+        iconTheme: IconThemeData(
+          color: Colors.pink
         )
       ),
       home: StreamBuilder(
